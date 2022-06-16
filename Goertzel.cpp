@@ -23,7 +23,7 @@
 
 float _SAMPLING_FREQUENCY;
 float _TARGET_FREQUENCY;
-int _N;
+int _NSZ;
 float coeff;
 float Q1;
 float Q2;

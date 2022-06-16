@@ -1,7 +1,7 @@
 Goertzel
 ========
 
-Arduino Library implementation of the Goertzel algorithm
+Arduino Library implementation of the Goertzel algorithm, originally written by [jacobrosenthal]([url](https://github.com/jacobrosenthal/Goertzel)). Adapted fixes for running on an SAMD Arduino Metro M0
 
 
 
@@ -25,9 +25,4 @@ void loop()
 ```
 
 
-Todo
-----
-
-Look to replace floats for quicker running.
-More full featured DTMF tone detection example.
 

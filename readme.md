@@ -1,7 +1,7 @@
 Goertzel
 ========
 
-Arduino Library implementation of the Goertzel algorithm, originally written by [jacobrosenthal]([url](https://github.com/jacobrosenthal/Goertzel)). Adapted fixes for running on an SAMD Arduino Metro M0
+Arduino Library implementation of the Goertzel algorithm, originally written by [jacobrosenthal](https://github.com/jacobrosenthal/Goertzel). Adapted fixes for running on an SAMD Arduino Metro M0
 
 
 

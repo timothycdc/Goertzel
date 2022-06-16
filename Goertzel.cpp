@@ -45,9 +45,9 @@ Goertzel::Goertzel(float TARGET_FREQUENCY, float N, float SAMPLING_FREQUENCY)
   _SAMPLING_FREQUENCY=SAMPLING_FREQUENCY;	//on 16mhz, ~8928.57142857143, on 8mhz ~44444
   _TARGET_FREQUENCY=TARGET_FREQUENCY; //should be integer of SAMPLING_RATE/N
   if(N>MAXN){
-     _N=MAXN;
+     _NSZ=MAXN;
   }else{
-    _N=N;
+    _NSZ=N;
   }
   
   float omega = (2.0 * PI * _TARGET_FREQUENCY) / _SAMPLING_FREQUENCY;
@@ -79,7 +79,7 @@ void Goertzel::ProcessSample(int sample)
 /* Sample some test data. */
 void Goertzel::sample(int sensorPin)
 {
-  for (int index = 0; index < _N; index++)
+  for (int index = 0; index < _NSZ; index++)
   {
     testData[index] = analogRead(sensorPin);
   }
@@ -91,7 +91,7 @@ float Goertzel::detect()
   float	magnitude;
 
   /* Process the samples. */
-  for (int index = 0; index < _N; index++)
+  for (int index = 0; index < _NSZ; index++)
   {
     ProcessSample(testData[index]);
   }
